@@ -50,7 +50,7 @@
 **中文**: 右侧表格会实时显示进度。双击某一行可在浏览器中直接打开该电话页面。
 **English**: The right-side table shows live progress. Double-click any row to open the phone's web UI directly in your browser.
 
-![Monitoring]([在这里上传你的图3链接])
+<img width="1279" height="882" alt="image" src="https://github.com/user-attachments/assets/6659c4a9-2163-4060-a42f-85f49ae78b6d" />
 
 ---
 
