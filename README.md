@@ -56,20 +56,34 @@
 
 ## 🛠️ 环境准备 (Setup for Developers)
 
-### 1. 克隆与安装 (Clone & Install)
-```bash
-git clone [https://github.com/YourUsername/YourRepo.git](https://github.com/YourUsername/YourRepo.git)
-pip install -r requirements.txt
+### 1. 生成免安装exe (Generate Exe no Install version. Double click & Run)
+如果你想在本地生成自己的 .exe 文件，请确保已安装 Python 3.10+。
 
-### 2. 安装内核 (Install Browser Core)
-```bash
-playwright install chromium
+在项目文件夹中按住 Shift 并右键点击空白处，选择 “在此处打开 PowerShell 窗口”。
 
-### 3.📦 打包建议 (Packaging Tips)
-中文: 建议使用 PyInstaller 将程序打包为文件夹模式，并包含 resources 文件夹。
-English: It is recommended to use PyInstaller to package the app in "Directory" mode, ensuring the resources folder is included.
-```bash
-pyinstaller --noconfirm --onedir --windowed --icon "resources/app.ico" --add-data "resources;resources" main.py
+复制并粘贴下方整段脚本并回车：
+
+To generate your own .exe file locally, ensure Python 3.10+ is installed.
+
+Hold Shift and Right-click in the project folder, then select "Open PowerShell window here".
+
+Copy and paste the entire script below and press Enter:
+
+Powershell：
+# 1. 创建虚拟环境 (Create Virtual Environment)
+python -m venv venv_pack;
+
+# 2. 启动虚拟环境并安装核心依赖 (Activate & Install Dependencies)
+.\venv_pack\Scripts\activate;
+pip install playwright pyautogui pynput pyinstaller;
+
+# 3. 执行打包命令 - 极致瘦身版 (Execute One-File Packaging)
+python -m venv venv_pack; .\venv_pack\Scripts\activate; pip install playwright pyautogui pynput pyinstaller; pyinstaller --noconsole --onefile --clean --add-data "resources;resources" --icon "resources/app.ico" --exclude-module PySide6 --exclude-module shiboken6 --exclude-module pillow --exclude-module pystray --exclude-module matplotlib --name "Htek_Deltapath_AutoProvision_Tool" main.py
+
+
+Write-Host "`n🎉 Build Success! Find your EXE in the 'dist' folder." -ForegroundColor Green
+
+Write-Host "`n🎉 打包完成！请在 dist 文件夹中查看 EXE 文件。" -ForegroundColor Green
 
 👤 关于作者 (About Author)
 Anderson Ong - UC & Voice Specialist | Maxis Broadband Sdn Bhd
