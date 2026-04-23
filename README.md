@@ -39,13 +39,13 @@ As the software is not digitally signed, Windows SmartScreen will block it. Clic
 在左侧面板填入设备 IP 列表、服务器地址以及 HTTP 账号密码，点击 **"START Task"**。
 Enter the Device IP list, Server address, and HTTP credentials on the left panel, then click **"START Task"**.
 
-<img width="1152" height="882" alt="image" src="https://github.com/user-attachments/assets/1239bc5e-c350-4d5c-9803-d157d12a321c" />
+<img width="1152" height="975" alt="image" src="https://github.com/user-attachments/assets/15bbc499-bae1-4212-815f-702594406bba" />
 
 第三步：结果监控 (Step 3: Live Monitoring)
 右侧表格会实时显示进度。双击某一行可在浏览器中直接打开该电话页面。
 The right-side table shows live progress. Double-click any row to open the phone's web UI directly in your browser.
 
-<img width="1279" height="882" alt="image" src="https://github.com/user-attachments/assets/6659c4a9-2163-4060-a42f-85f49ae78b6d" />
+<img width="1472" height="975" alt="image" src="https://github.com/user-attachments/assets/d8a33cd2-4ef0-45df-8f0f-11e0ad1ba66e" />
 
 ---
 
