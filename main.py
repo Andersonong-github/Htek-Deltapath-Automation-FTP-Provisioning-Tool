@@ -608,4 +608,4 @@ class UCApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = UCApp(root)
-    root.mainloop)
+    root.mainloop()
